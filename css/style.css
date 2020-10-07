@@ -3002,7 +3002,7 @@ h6 {
 /*# sourceMappingURL=style.css.map */
 
 .container-fluid {
-	background-color: #FCFAFA;
+	background-color: #dfcaca;
 }
 
 #hero {
@@ -3047,7 +3047,6 @@ h6 {
 	padding: 25px 60px;
 	padding-right: 10px;
 	margin-top: 95px;
-	font-family: 'Playfair display'
 }
 
 .hero-title h1 {

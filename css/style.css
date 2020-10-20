@@ -2795,6 +2795,27 @@ h6 {
 .h_gallery_item {
   display: inline-block;
   margin-bottom: 45px; }
+	.h_gallery_item article.imgstyle > .g_img_item:before {
+		background-color: rgba(175, 199, 208, 0.6);
+	}
+	.h_gallery_item article.style1 > .g_img_item:before {
+		background-color: #f2849e;
+	}
+	.h_gallery_item article.style2 > .g_img_item:before {
+		background-color: #7ecaf6;
+	}
+	.h_gallery_item article.style3 > .g_img_item:before {
+		background-color: #7bd0c1;
+	}
+	.h_gallery_item article.style4 > .g_img_item:before {
+		background-color: #c75b9b;
+	}
+	.h_gallery_item article.style5 > .g_img_item:before {
+		background-color: #ae85ca;
+	}
+	.h_gallery_item article.style6 > .g_img_item:before {
+		background-color: #8499e7;
+	}
   .h_gallery_item .g_img_item {
     position: relative;
     text-align: center;
@@ -2807,7 +2828,7 @@ h6 {
       left: 0px;
       top: 0px;
       position: absolute;
-      opacity: 0;
+      opacity: 0.8;
       transition: all 300ms ease; }
     .h_gallery_item .g_img_item .light {
       position: absolute;
@@ -2823,13 +2844,11 @@ h6 {
       color: #222222;
       font-size: 21px;
       margin-top: 22px;
-      transition: all 300ms linear 0s; }
+      transition: all 300ms linear 0s;
+	  cursor: context-menu;	  }
     .h_gallery_item .g_item_text p {
-      margin-bottom: 0px; }
-  .h_gallery_item:hover .g_img_item:before {
-    opacity: .85; }
-  .h_gallery_item:hover .g_img_item .light {
-    opacity: 1; }
+      margin-bottom: 0px;
+	  cursor: context-menu }
   .h_gallery_item:hover .g_item_text h4:hover {
     color: #766dff; }
 

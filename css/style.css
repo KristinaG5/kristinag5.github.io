@@ -2852,29 +2852,11 @@ h6 {
     .h_gallery_item .g_item_text p {
       margin-bottom: 0px;
 	  cursor: context-menu }
-	  
-			body:not(.is-touch) .h_gallery_item article:hover > .g_img_item {
-				-moz-transform: scale(1.1);
-				-webkit-transform: scale(1.1);
-				-ms-transform: scale(1.1);
-				transform: scale(1.1);
-			}
 
-				body:not(.is-touch) .h_gallery_item article.imgstyle1:hover > .g_img_item:before {
-					background-color: #333333;
-					opacity: 0.35;
-				}
-				body:not(.is-touch) .h_gallery_item article.imgstyle2:hover > .g_img_item:before {
-					background-color: #333333;
-					opacity: 0.35;
-				}
-
-				body:not(.is-touch) .h_gallery_item article:hover > .g_img_item:after {
-					opacity: 0;
-				}
-
-  .h_gallery_item:hover .g_item_text h4:hover {
-    color: #766dff; }
+  .h_gallery_item:hover .g_item_text a:hover > h4 {
+    color: #766dff; 
+    cursor: pointer;
+  }
 
 .more_btn {
   text-align: center;

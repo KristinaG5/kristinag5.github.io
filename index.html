@@ -1,242 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="image" property="og:image" content="https://kristinag5.github.io/images/header-profile.jpg">
-   <meta name="title" property="og:title" content="Kristina Geddis - Portfolio">
-   <meta name="description" property="og:description" content="Welcome to my personal portfolio website with links to Github repositories where applicable. Projects range from hackathons, hobby & university projects.">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="image" property="og:image" content="https://kristinag5.github.io/images/header-profile.jpg" />
+  <meta name="title" property="og:title" content="Kristina Geddis" />
+  <meta name="description" property="og:description"
+    content="Welcome to my portfolio!" />
 
-	<!-- Site title
-   ================================================== -->
-   <title>Kristina Geddis Portfolio</title>
+  <!-- Site title -->
+  <title>Kristina Geddis</title>
 
-	<!-- Bootstrap CSS
-   ================================================== -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/ionicons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-	<!-- Animate CSS
-   ================================================== -->
-	<link rel="stylesheet" href="css/animate.min.css">
 
-	<!-- Font Icons CSS
-   ================================================== -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/ionicons.min.css">
+  <!-- Google web font -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Nanum+Pen+Script&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
 
-	<!-- Main CSS
-   ================================================== -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Google web font 
-   ================================================== -->	
-   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-	
-  <!-- Favicon
-   ================================================== -->	
-   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-   <link rel="manifest" href="images/favicon/site.webmanifest">
+  <!-- Favicon -->
+  <link href="images/favicon/favicon.ico?" rel="icon" type="image/x-icon" />
 </head>
+
 <body>
-<!-- Header section
-================================================== -->
-<section id="header" class="header-one">
-	<div class="container">
-		<div class="row">
-
-			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
-          <div class="header-thumb">
-               <img src="images/header-profile.jpg" class="user" alt="Profile">
-
-              <h1 class="wow fadeIn" data-wow-delay="0.5s">Kristina Geddis</h1>
-              <h3 class="wow fadeInUp" data-wow-delay="0.8s">Software Engineer</h3>
+  <div class="wrapper">
+    <header data-aos="fade-up" data-aos-once="true">
+      <p class="scrollDownText"><i class="fas fa-angle-down scroll"></i></p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="col-md-8 col-sm-6">
+              <div class="headerText">
+                <h1>
+                  Hej! <span>I'm Kristina.</span>
+                </h1>
+                <p>
+                  An aspiring <span>front-end developer</span> and
+                  <span>UX/UI designer</span>
+                  <span class="smallerText">(based in Sweden)</span>
+                </p>
+                <p>
+                  Currently working as a Software Engineer but looking to transition into a UX/UI role
+                  as I love being <span>creative</span> and <span>designing the user
+                    experience</span> 🤗
+                </p>
+                <p>
+                  <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/kristina-geddis/" class="fa fa-linkedin" target="_blank"></a>
+                    <a href="https://github.com/KristinaG5" class="fa fa-github" target="_blank"></a>
+                    <a href="mailto:kgeddis950@gmail.com" class="fa fa-envelope"></a>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="imageContainer">
+                <img src="images/header-profile.jpg" alt="Header image" />
+              </div>
+            </div>
           </div>
-			</div>
-
-		</div>
-	</div>		
-</section>
-
-
-<!-- Portfolio section
-================================================== -->
-<section id="portfolio">
-   <div class="container">
-      <div class="row">
-
-         <div class="col-md-12 col-sm-12">
-            
-               <!-- iso section -->
-               <div class="iso-section fadeInUp">
-
-                  <ul class="filter-wrapper clearfix">
-                           <li><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
-                           <li><a href="#" class="opc-main-bg" data-filter=".uni">University</a></li>
-                           <li><a href="#" class="opc-main-bg" data-filter=".ai">Machine Learning & AI</a></li>
-                           <li><a href="#" class="opc-main-bg" data-filter=".programming">Programming</a></li>
-                        <li><a href="#" class="opc-main-bg" data-filter=".design">Design & Electronics</a></li>
-                        </ul>
-
-                        <!-- iso box section -->
-                        <div class="iso-box-section fadeInUp">
-                           <div class="iso-box-wrapper col4-iso-box">
-
-                              <div class="iso-box uni ai programming col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <img src="images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <a href="https://github.com/KristinaG5/AI-Sign-Language-Translator"><i class="fa fa-link"></i></a>
-                                                <h2>AI Driven Sign Language Translator</h2>
-                                                <p>Python machine learning final year dissertation project to automatically produce captions for sign language videos.</p>
-                                             </div>
-                                       </div>
-                                 </div>
-                              </div>
-
-                              <div class="iso-box uni ai programming col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <img src="images/portfolio-img2.jpg" class="img-responsive" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <h2>Matlab Face Recognition</h2>
-                                                <p>Matlab classification project to detect faces in an image.</p>
-                                             </div>
-                                       </div>
-                                 </div>
-                              </div>
-
-                              <div class="iso-box uni programming col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <img src="images/portfolio-img3.jpg" class="img-responsive" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <a href="https://github.com/BenAAndrew/Pokemon"><i class="fa fa-link"></i></a>
-                                                <h2>Android - 2D Pokemon Game</h2>
-                                                <p>Pokemon style android game built without standard engine. A nice tool for developing any generic 2D games with simple screens & sprites.</p>
-                                             </div>
-                                       </div>
-                                 </div>
-                              </div>
-
-                              <div class="iso-box design uni col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <img src="images/portfolio-img4.jpg" class="img-responsive" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <a href="https://github.com/KristinaG5/Robotics"><i class="fa fa-link"></i></a>
-                                                <h2>Queen's Robotics Society Robot</h2>
-                                                <p>Multi-functional robot written in Arduino. This robot was used to win the IET Northern Ireland Robotics League 2019!</p>
-                                             </div>
-                                       </div>
-                                 </div>
-                              </div>
-
-                              <div class="iso-box uni ai col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <img src="images/portfolio-img9.jpg" class="img-responsive" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <h2>Artificial Neural Networks</h2>
-                                                <p>Jupyter Notebooks implementing and optimising Artificial Neural Networks from scratch and using Sklearn.</p>
-                                             </div>
-                                       </div>
-                                 </div>
-                              </div>
-
-                              <div class="iso-box design col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <img src="images/portfolio-img5.jpg" class="img-responsive" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <a href="https://www.instructables.com/id/Create-Your-Own-Mini-Arcade-Machine/"><i class="fa fa-link"></i></a>
-                                                <h2>Retropi Mini Arcade</h2>
-                                                <p>Mini arcade machine using a raspberry pi running retropi OS. Fun electronics/ micro-controller project.</p>
-                                             </div>
-                                       </div>
-                                 </div>
-                              </div>
-
-                              <div class="iso-box programming ai col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <img src="images/portfolio-img6.jpg" class="img-responsive red" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <a href="https://www.kainos.com/insights/news/hackathon-winners-among-elite-group-complete-kainos-i-camp"><i class="fa fa-link"></i></a>
-                                                <h2>Stuck Overflow</h2>
-                                                <p>Keras Machine Learning project from Kainos AI Camp 2018 hackathon. Uses text analysis to identify key libraries/functions from Stack Overflow answers and maps to questions.</p>
-                                             </div>
-                                       </div>
-                                 </div>
-                              </div>
-                              
-                              <div class="iso-box programming uni col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <img src="images/portfolio-img7.jpg" class="img-responsive" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <a href="https://github.com/KristinaG5/WebServer"><i class="fa fa-link"></i></a>
-                                                <h2>Ecosystem Web App</h2>
-                                                <p>This was my first year software engineering project where I designed and programmed a Java web app for an eco-system.</p>
-                                             </div>
-                                       </div>
-                                 </div>
-                              </div>
-
-                              <div class="iso-box programming uni col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <img src="images/portfolio-img8.jpg" class="img-responsive" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <a href="https://github.com/KristinaG5/SupplierApp"><i class="fa fa-link"></i></a>
-                                                <h2>Supplier App</h2>
-                                                <p>This was my first year programming project where I built a console-based Java application for a stock management system.</p>
-                                             </div>
-                                       </div>
-                                 </div>
-                              </div>
-
-                            </div>
-                        </div>
-
-               </div>
-
-         </div>
-
+        </div>
       </div>
-   </div>
-</section>
+    </header>
+  </div>
+  <div class="preloader"></div>
 
-<!-- Footer section
+  <main>
+    <div class="wrapper">
+      <section class="aboutMe" id="aboutMe">
+        <div data-aos="fade-up" data-aos-once="true">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <h2>~About Me 🌸~</h2>
+                <div class="col-md-6 col-sm-6">
+
+                  <div class="text-block">
+                    👩‍💻 &nbsp; Software Engineer moving to Uppsala, Sweden
+                  </div>
+                  <div class="text-block">
+                    🎓 &nbsp; Bachelor of Engineering in Computer Science <span class="smallerText">(first class
+                      honours!)</span>
+                  </div>
+                  <div class="text-block">
+                    🔎 &nbsp; Looking for a creative UX/UI and/or front-end role</span>
+                  </div>
+                  <div class="text-block">
+                    💬 &nbsp; Fluent in English, Swedish & Russian <span class="smallerText">(trilingual!)</span>
+                  </div>
+                  <div class="text-block">
+                    💖 &nbsp; I love knitting, crocheting🧵 and skiing 🏂 <span class="smallerText">(and playing games)</span></span>
+                  </div>
+                  <hr>
+                  <p class="notesText" data-aos="fade-up" data-aos-once="true">
+                    PS: I am moving back to Sweden in April after 10 years of living in the UK!
+                  </p>
+                </div>
+                <div class="col-md-6 col-sm-6 image">
+                  <img class="rounded mx-auto d-block" src="images/about-me.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-once="true">
+            <h2>~My Toolkit 🧰~</h2>
+            <ul class="skills">
+              <!-- Skills -->
+              <li><img src="images/icons/design-thinking.svg" alt="Design thinking" />Design thinking</li>
+              <li><img src="images/icons/accessibility.svg" alt="Accessibility" />Accessibility</li>
+              <li><img src="images/icons/user-reseach.svg" alt="User research" />User research & Persona creation</li>
+              <li><img src="images/icons/idea.svg" alt="Prototyping" />Prototyping</li>
+              <!-- Technologies -->
+              <li><img src="images/icons/html.svg" alt="HTML" />HTML5 & CSS</li>
+              <li><img src="images/icons/javascript.svg" alt="Javascript" />Javascript</li>
+              <li><img src="images/icons/react.svg" alt="React" />React</li>
+              <!-- Software -->
+              <li><img src="images/icons/figma.svg" alt="Figma" />Figma</li>
+              <li><img src="images/icons/jira.svg" alt="Jira" />Jira</li>
+              <li><img src="images/icons/github.svg" alt="Github" />Github</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div data-aos="fade-up" data-aos-once="true">
+          <h2>~Projects 💻~</h2>
+          <p class="notesText" data-aos="fade-up" data-aos-once="true">
+            psst! more of my previous programming projects can be found on my
+            <a href="https://github.com/KristinaG5" class="notesText" target="_blank">Github</a>
+          </p>
+          <div class="row">
+            <section class="notes">
+              <div class="col-md-12 col-sm-12">
+                <div class="col-md-4 col-sm-6">
+                  <article class="card">
+                    <div class="card-inner">
+                      <span class="card-pin"></span>
+                      <div class="card-image">
+                        <img src="images/crochet.jpg" />
+                      </div>
+                      <div class="card-content">
+                        <h3 class="card-title">Crochet Tracker</h3>
+                        <h3>UX/UI Design | Web Development</h3>
+                        <p class="smallerText">(currently in development)</p>
+                        <p>A React app that allows users to keep track of their current crochet project.
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <article class="card style2">
+                    <div class="card-inner">
+                      <span class="card-pin simple"></span>
+                      <div class="card-image">
+                        <a href="https://github.com/KristinaG5/AI-Sign-Language-Translator" target="_blank">
+                        <img src="images/bsl.png"/>
+                        </a>
+                      </div>
+                      <div class="card-content">
+                        <h3 class="card-title">AI Driven British Sign Language Translator</h3>
+                        <h3>Machine Learning | Web development</h3>
+                        <p>
+                          A Flask/Bootstrap web-application for automatically producing captions from sign language
+                          videos with a
+                          simplified UI interface for easy labelling.
+                          <p class="smallerText">(final year dissertation project)</p>
+                        </p>
+                        <a href="https://github.com/KristinaG5/AI-Sign-Language-Translator" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="24px" height="24px">
+                            <path fill="#e96269"
+                              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                          </svg>
+                        </a>
+                        <a href="Kristina_Geddis_Dissertation.pdf" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="24px" height="24px">
+                            <path fill="#e96269"
+                              d="M184 208c0-4.406-3.594-8-8-8S168 203.6 168 208c0 2.062 .2969 23.31 9.141 50.25C179.1 249.6 184 226.2 184 208zM256 0v128h128L256 0zM80 422.4c0 9.656 10.47 11.97 14.38 6.375C99.27 421.9 108.8 408 120.1 388.6c-14.22 7.969-27.25 17.31-38.02 28.31C80.75 418.3 80 420.3 80 422.4zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM292 312c24.26 0 44 19.74 44 44c0 24.67-18.94 44-43.13 44c-5.994 0-11.81-.9531-17.22-2.805c-20.06-6.758-38.38-15.96-54.55-27.39c-23.88 5.109-45.46 11.52-64.31 19.1c-14.43 26.31-27.63 46.15-36.37 58.41C112.1 457.8 100.8 464 87.94 464C65.92 464 48 446.1 48 424.1c0-11.92 3.74-21.82 11.18-29.51c16.18-16.52 37.37-30.99 63.02-43.05c11.75-22.83 21.94-46.04 30.33-69.14C136.2 242.4 136 208.4 136 208c0-22.05 17.95-40 40-40c22.06 0 40 17.95 40 40c0 24.1-7.227 55.75-8.938 62.63c-1.006 3.273-2.035 6.516-3.082 9.723c7.83 14.46 17.7 27.21 29.44 38.05C263.1 313.4 284.3 312.1 287.6 312H292zM156.5 354.6c17.98-6.5 36.13-11.44 52.92-15.19c-12.42-12.06-22.17-25.12-29.8-38.16C172.3 320.6 164.4 338.5 156.5 354.6zM292.9 368C299 368 304 363 304 356.9C304 349.4 298.6 344 292 344H288c-.3438 .0313-16.83 .9687-40.95 4.75c11.27 7 24.12 13.19 38.84 18.12C288 367.6 290.5 368 292.9 368z" />
+                          </svg>
+                        </a>
+                      </div>
+                      <span class="card-pin simple"></span>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <article class="card style3">
+                    <div class="card-inner">
+                      <span class="card-pin"></span>
+                      <div class="card-image">
+                        <a href="https://github.com/KristinaG5/NHS-Procurement" target="_blank">
+                        <img src="images/nhs.png"/>
+                        </a>
+                      </div>
+                      <div class="card-content">
+                        <h3 class="card-title">
+                          National Health Service Procurement
+                        </h3>
+                        <h3>UX/UI Design | Prototyping</h3>
+                        <p>
+                          A Flask web-application prototype designed to help simplify the
+                          interaction between suppliers and healthcare providers
+                          when ordering stock for hospitals in England.
+                          <p class="smallerText">(built on the principals of diverge/converge technique)</p>
+                        </p>
+                        <a href="https://github.com/KristinaG5/NHS-Procurement" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="24px" height="24px">
+                            <path fill="#e96269"
+                              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                          </svg>
+                        </a>
+                        <a href="https://team5-scrumdog-millionaire.herokuapp.com/" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="24px" height="24px">
+                            <path fill="#e96269"
+                              d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer section
 ================================================== -->
-<footer>
-	<div class="container">
-		<div class="row">
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <p>created with 💖 by kristina geddis</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-			<div class="col-md-12 col-sm-12">
-				<p class="wow fadeInUp">Kristina Geddis. All rights reserved | Designed by Tooplate</p>
-				<ul class="social-icon wow fadeInUp"  data-wow-delay="0.2s">
-					<li><a href="https://www.linkedin.com/in/kristina-geddis/" class="fa fa-linkedin"></a></li>
-					<li><a href="mailto:kgeddis950@gmail.com" class="fa fa-envelope"></a></li>
-				</ul>
-			</div>
-			
-		</div>
-	</div>
-</footer>
-
-
-<!-- Javascript 
+  <!-- Javascript 
 ================================================== -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
-
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/2a20f3910e.js" crossorigin="anonymous">
+  </script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>

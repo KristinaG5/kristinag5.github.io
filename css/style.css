@@ -1,9 +1,16 @@
 body {
 		background: #fafafa;
-    font-family: 'karla', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     position: relative;
-    background-image: url(../images/header-bg.jpg);
+}
+
+.home-bg {
+  background-image: url("../images/header-bg.jpg");
+}
+
+.projectOne-bg {
+  background-color: #fefefe;
 }
 
 :root {
@@ -14,6 +21,10 @@ body {
   --light-pink: #fcb3b1;
   --pink: #fa8380;
   --dark-pink: #e96269;
+  --grey: #5b616b ;
+
+  --blue: #005EB8;
+  --light-blue: #41B6E6;
 
   --c-gray-100: #fbf8f2;
   --c-gray-200: #fcfdfe;
@@ -49,37 +60,43 @@ h1 {
 
 h2 {
   color: #444;
-  font-size: 1em;
+  font-size: 1.7em;
   font-weight: 400;
   letter-spacing: 0.3rem;
-  text-transform: uppercase;
+  font-family: 'Caveat', cursive;
 }
 
 h3 {
   color: #444;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
 
 h4 {
   color: #444;
-  font-size: 14px;
-  letter-spacing: 4px;}
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
 
 h5 {
   font-weight: 400;
   letter-spacing: 1px;
-  font-style: italic;
 }
 
 p {
   color: #000;
   font-size: 16px;
   line-height: 28px;
-  font-family: 'karla', italic;
   font-weight: 300;
+}
+
+.link {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 a {
@@ -104,7 +121,7 @@ img {
   max-width: 100%;
 }
 
-header img {
+header img.circle{
   border-radius: 50%;
   border: 5px solid var(--light-green);
   display: inline-block;
@@ -179,13 +196,15 @@ header img {
     font-size: 3rem;
     font-weight: 700;
     margin: 10px 0;
+    padding-bottom: 0.5em;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 0.3em;
     color: var(--pink);
     position: relative;
     max-width: 200px;
-    width: 80%;
-    font-family: 'Homemade Apple', cursive;
-    text-align: center;
-    text-shadow: 3px 3px 0px var(--light-pink)
+    font-family: 'Caveat', cursive;
+    text-shadow: 1px 1px 4px var(--light-pink);
   }
   
   @media (min-width: 780px) {
@@ -278,7 +297,7 @@ header img {
   
   header p .smallerText {
     font-family: "Nanum Pen Script", "cursive";
-    color: #b3b3b3;
+    color: var(--grey);
   }
 
   .wrapper {
@@ -321,9 +340,9 @@ header img {
 
   font-weight: 700;
   color: var(--pink);
-  font-family: 'Liu Jian Mao Cao', cursive;
+  font-family: 'Caveat', cursive;
   text-align: center;
-  text-shadow: 3px 3px 0px var(--light-pink)
+  text-shadow: 1px 3px 0px var(--light-pink)
 }
 
 .notes {
@@ -346,11 +365,12 @@ a.notesText{
 
 a.notesText:hover{
   font-weight: 600;
+  color: var(--dark-pink);
 }
 
 .smallerText {
   font-family: "Nanum Pen Script", "cursive";
-  color: #b3b3b3;
+  color: var(--grey);
 }
 
 .card {
@@ -359,7 +379,6 @@ a.notesText:hover{
   transform: rotate(var(--rotation));
   transition: 0.15s ease-out;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 .card.style2 {
   margin-top: 1rem;
@@ -397,7 +416,7 @@ a.notesText:hover{
 .card:hover .card-pin:before, .card:focus-within .card-pin:before {
   transform: translatey(-4px);
 }
-.disabled {
+.card.disabled {
   pointer-events: none;
 }
 .card.horizontal {
@@ -417,9 +436,6 @@ a.notesText:hover{
   width: 100%;
   margin-top: 0;
   margin-left: 0.5rem;
-}
-.card.horizontal .card-meta-artist {
-  font-weight: 700;
 }
 .card.horizontal .card-title {
   font-weight: 500;
@@ -537,11 +553,14 @@ a.notesText:hover{
 
 .card-title {
   margin-top: 3rem;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 600;
   padding-bottom: 0.5rem;
 }
 
+.card-title:hover{
+  text-decoration: underline;
+}
 .aboutMe {
   min-height: 500px;
   height: 90%;
@@ -555,9 +574,9 @@ a.notesText:hover{
   margin-top: 1em;
   margin-bottom: 1em;
   color: var(--pink);
-  font-family: 'Liu Jian Mao Cao', cursive;
+  font-family: 'Caveat', cursive;
   text-align: center;
-  text-shadow: 3px 3px 0px var(--light-pink)
+  text-shadow: 1px 3px 0px var(--light-pink)
 }
 
 .image img {
@@ -565,7 +584,7 @@ a.notesText:hover{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100%;
 }
 
 .text-block {
@@ -631,6 +650,29 @@ a.notesText:hover{
 .skills h2 {
   text-align: center;
 }
+
+/* Project section */
+.project {
+  min-height: 500px;
+  height: 90%;
+  padding: 30px auto;
+}
+
+.project h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Caveat', cursive;
+  text-align: center;
+}
+
+.project h1.blue{
+  color: var(--blue);
+  text-shadow: 1px 3px 0px var(--light-blue)
+}
+
 
 /* footer section styles
 /* ========================================== */

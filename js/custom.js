@@ -15,3 +15,16 @@ $(function () {
     );
   });
 });
+
+// Arrow to scroll to project section
+$(function () {
+  const arrow = $(".scrollProject");
+  arrow.on("click", function () {
+    $("html, body").animate(
+      {
+        scrollTop: $("#project").offset().top,
+      },
+      1500
+    );
+  });
+});

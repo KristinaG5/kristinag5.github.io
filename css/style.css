@@ -677,6 +677,20 @@ a.notesText:hover{
   text-shadow: 1px 3px 0px var(--light-blue)
 }
 
+.click-zoom input[type=checkbox] {
+  display: none
+}
+
+.click-zoom img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(1.4);
+  cursor: zoom-out
+}
+
 
 /* footer section styles
 /* ========================================== */

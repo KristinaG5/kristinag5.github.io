@@ -8,7 +8,7 @@ body {
 
 /* Background vector created by freepik - www.freepik.com */
 .home-bg {
-  background-image: url("../images/header-bg.jpg");
+  background-image: url("../images/header-bg.avif");
 }
 
 .projectOne-bg {
@@ -18,7 +18,7 @@ body {
 }
 
 :root {
-  --dark-green: #61833F;
+  --dark-green: #5C7C3C;
   --green: #9dc07a;
   --white-green: #eff4e8;
   --light-green: #dfead2;

@@ -8,7 +8,9 @@ body {
 
 /* Background vector created by freepik - www.freepik.com */
 .home-bg {
-  background-image: url("../images/header-bg.avif");
+  background-image: url("../images/header-bg.jpg");
+  background-repeat: repeat;
+  background-size: 900px;
 }
 
 .projectOne-bg {
@@ -118,6 +120,46 @@ header img.circle{
   border: 5px solid var(--light-green);
   display: inline-block;
   object-fit: cover;
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  position: relative;
+  margin: 0.5em;
+  padding: 0.5em 2em 0.5em 3em;
+  border: none;
+}
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+blockquote:before {
+  font-family: Georgia, serif;
+  position: absolute;
+  font-size: 6em;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: "\201C";
+}
+blockquote:after {
+  font-family: Georgia, serif;
+  position: absolute;
+ /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+  float:right;
+  font-size:6em;
+  line-height: 1;
+  right:0;
+  bottom:-0.5em;
+  content: "\201D";
+}
+
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
 }
 
 
@@ -374,7 +416,7 @@ a.notesText:hover{
 }
 .card.style2 {
   margin-top: 1rem;
-  --rotation: 5deg;
+  --rotation: 0deg;
 }
 .card.style2 .card-inner:after {
   background-color: var(--light-pink);
